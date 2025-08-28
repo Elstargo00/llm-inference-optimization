@@ -1,0 +1,102 @@
+test_name,model_config,latency_ms,first_token_latency_ms,tokens_generated,token_speed,throughput_imgs_per_sec,response_text,accuracy_score,similarity_reasoning,timestamp
+NDA_Extraction,QWEN_Baseline,135671.43256500276,4177.561187003448,464,3.4200272763957793,0.007370748440508145,"Here are the clauses extracted from the NDA document, listed with their titles and main content:
+
+### 1. **Term**
+- **Main Content**: 
+  - The Agreement commences on the Effective Date.
+  - The Agreement remains in effect for five (5) years.
+  - Obligations regarding confidentiality terminate immediately upon disclosure of the information.
+
+### 2. **Return or Destruction of Materials**
+- **Main Content**: 
+  - Upon termination of the Agreement or upon the Disclosing Party's request, the Receiving Party shall promptly return or destroy all Confidential Information.
+  - The Receiving Party may retain copies indefinitely for internal reference.
+
+### 3. **Governing Law**
+- **Main Content**: 
+  - The Agreement shall be governed by and construed in accordance with the laws of the State of New York.
+
+### 4. **Confidentiality**
+- **Main Content**: 
+  - The Receiving Party acknowledges and agrees that all Confidential Information disclosed or made available is highly sensitive and proprietary.
+  - The Receiving Party shall maintain such Confidential Information in strict confidence.
+  - The Receiving Party shall use the same degree of care that it employs to protect its own confidential information, but in no event less than a reasonable standard of care.
+  - The Receiving Party shall not, without the prior written consent of the Disclosing Party, disclose, publish, or disseminate such information to any third party.
+  - The Receiving Party shall ensure that its employees, agents, and affiliates with access to the Confidential Information are bound by confidentiality obligations no less restrictive than those contained herein.
+  - The Receiving Party shall use such Confidential Information solely for the Purpose outlined in this Agreement.
+  - The obligation of confidentiality shall survive the termination or expiration of this Agreement for a period of five (5) years or as otherwise required by applicable law.
+
+### 5. **Additional Clause (Implied from the context of the document)**
+- **Main Content**: 
+  - The Receiving Party may freely use the Confidential Information for any business purpose, including purposes outside the defined Purpose.
+
+This structure provides a clear overview of the key clauses in the NDA document, highlighting the main obligations and terms related to confidentiality, duration, governing law, and handling of confidential materials.",0.0,,2025-08-29T00:22:11.719499
+Invoice_LineItems,QWEN_Baseline,68899.8533000049,3391.2212940049358,235,3.410747465263228,0.01451381900112012,"Here are the line items extracted from the invoice:
+
+**Line Item:**
+- **Description:** SERVICIO DE PREVENCIÓN AJENO EN LAS DISCIPLINAS DE SEGURIDAD EN EL TRABAJO HIGIENE INDUSTRIAL ERGONOMÍA Y PSICOSOCIOLOGÍA APLICADA VIGILANCIA DE LA SALUD EN LA EMPRESA LARGO CLEAN ENERGY
+- **Quantity:** 1
+- **Unit Price:** 2,445.00 €
+- **Total:** 2,445.00 €
+
+**Additional Information:**
+- **IVA (VAT):** 21%
+- **IVA Amount:** 513.45 €
+- **Total without IVA:** 2,445.00 €
+- **Total with IVA:** 2,958.45 €
+
+The invoice includes only one line item, which is a comprehensive service related to occupational safety and health for Largo Clean Energy. The total amount is broken down into the base price and the VAT amount.",0.0,,2025-08-29T00:23:21.630742
+NDA_Extraction,QWEN_Optimize_A,127996.4692249996,3904.450989997713,534,4.1719900809240595,0.007812715507348427,"Here are the clauses extracted from the NDA document, listed with their titles and main content:
+
+### 1. Term
+- **Title:** Term
+- **Main Content:**
+  - The Agreement commences on the Effective Date.
+  - The Agreement remains in effect for five (5) years.
+  - Obligations regarding confidentiality terminate immediately upon disclosure of the information.
+
+### 2. Return or Destruction of Materials
+- **Title:** Return or Destruction of Materials
+- **Main Content:**
+  - Upon termination of this Agreement or upon the Disclosing Party's request, the Receiving Party shall promptly return or destroy all Confidential Information.
+  - The Receiving Party may retain copies indefinitely for internal reference.
+
+### 3. Governing Law
+- **Title:** Governing Law
+- **Main Content:**
+  - This Agreement shall be governed by and construed in accordance with the laws of the State of New York.
+
+### 4. Confidentiality
+- **Title:** Confidentiality
+- **Main Content:**
+  - The Receiving Party acknowledges and agrees that all Confidential Information disclosed or made available is highly sensitive and proprietary.
+  - The Receiving Party shall maintain such Confidential Information in strict confidence.
+  - The Receiving Party shall use such Confidential Information solely for the Purpose outlined in this Agreement.
+  - The Receiving Party shall not, without the prior written consent of the Disclosing Party, disclose, publish, or disseminate such information to any third party.
+  - The Receiving Party shall ensure that its employees, agents, and affiliates with access to the Confidential Information are bound by confidentiality obligations no less restrictive than those contained herein.
+  - The obligation of confidentiality shall survive the termination or expiration of this Agreement for a period of five (5) years or as otherwise required by applicable law.
+  - The Receiving Party may freely use the Confidential Information for any business purpose, including purposes outside the defined Purpose.
+
+### Summary of Key Points:
+- **Duration:** The Agreement is for five years, with confidentiality obligations surviving for five years after termination.
+- **Confidential Information Handling:** The Receiving Party must keep Confidential Information strictly confidential and use it only for the agreed purpose. Disclosure to third parties is prohibited without consent.
+- **Legal Jurisdiction:** The Agreement is governed by New York law.
+- **Post-Termination Obligations:** Confidentiality obligations continue for five years after the Agreement ends.
+- **Internal Use:** The Receiving Party can use the information for business purposes, even outside the defined purpose, but must maintain confidentiality.
+
+This structure ensures clear delineation of responsibilities and obligations regarding confidential information.",0.85,"The Optimized Model Response captures all the key clauses and their main content accurately, similar to the Baseline Response. However, it introduces a summary section that, while informative, slightly alters the original structure and intent of the extraction task. The additional clause regarding the Receiving Party's ability to use Confidential Information for business purposes is included in both responses, but the Optimized Response presents it as part of the Confidentiality section rather than as a separate clause, which could lead to confusion about its status.",2025-08-29T00:28:27.149620
+Invoice_LineItems,QWEN_Optimize_A,55273.31772099569,3069.348408993392,243,4.396334615312877,0.018091911997172333,"Here are the line items extracted from the invoice:
+
+**Line Item 1:**
+- **Description:** SERVICIO DE PREVENCIÓN AJENO EN LAS DISCIPLINAS DE SEGURIDAD EN EL TRABAJO HIGIENE INDUSTRIAL ERGONOMÍA Y PSICOSOCIOLOGÍA APLICADA VIGILANCIA DE LA SALUD EN LA EMPRESA LARGO CLEAN ENERGY
+- **Quantity:** 1
+- **Unit Price:** 2,445.00 €
+- **Total:** 2,445.00 €
+
+**Additional Information:**
+- **IVA (21%):** 513.45 €
+- **Total without IVA:** 2,445.00 €
+- **Total IVA:** 513.45 €
+- **Total Amount:** 2,958.45 €
+
+The invoice includes only one line item, which is a comprehensive service for Largo Clean Energy. The total amount is 2,958.45 €, including 21% VAT.",0.9,"The Optimized Model Response captures all the essential information from the Baseline Response, including the line item details and additional information about VAT. However, it slightly alters the structure and wording, which affects the overall clarity. The total amount is presented differently, but the information remains accurate.",2025-08-29T00:29:27.003109

@@ -1,0 +1,232 @@
+test_name,model_config,latency_ms,first_token_latency_ms,tokens_generated,token_speed,throughput_imgs_per_sec,response_text,accuracy_score,similarity_reasoning,timestamp
+NDA_Extraction,Baseline,212165.26324299775,5375.262563000433,512,2.4132131347702974,0.004713306903848237,"
+1. The following is a list of terms used in this NDA document:
+
+2. Confidential Information: Information that is marked or designated as confidential, whether or not it is in writing.
+
+3. Disclosure: The act of revealing or making known Confidential Information to any third party.
+
+4. Materials: Any and all materials, including but not limited to documents, data, software, and other information, whether in written, oral, electronic, or any other form.
+
+5. Term: The term of this agreement, as set forth in the contract.
+
+6. Use: The act of using, copying, distributing, or disclosing Confidential Information.
+
+7. Govern Law: The laws of the state where the contract is executed, without regard to its conflict of laws principles.
+
+8. Counterparts: The parties may execute this agreement in counterparts, each of which shall be deemed an original, but all of which together shall constitute one and the same instrument.
+
+9. Entire Agreement: This agreement constitutes the entire understanding between the parties and supersedes all prior negotiations, understandings, and agreements between the parties.
+
+10. Amendment: This agreement may not be amended or modified except in writing signed by both parties.
+
+11. Waiver: The failure to exercise any right provided in this agreement shall not be a waiver of prior or subsequent rights.
+
+12. Severability: If any provision of this agreement is held to be invalid or unenforceable, the remainder of the provisions of this agreement shall remain in full force and effect.
+
+13. Assignment: Neither party may assign or transfer its rights or obligations under this agreement without the prior written consent of the other party.
+
+14. Notice: Any notice or communication required or permitted to be given under this agreement shall be in writing and delivered by hand or sent by certified mail, return receipt requested, to the address specified in the contract.
+
+15. Counterparts: This agreement may be executed in counterparts, each of which shall be deemed an original, but all of which together shall constitute one and the same instrument.
+
+16. Governing Law: This agreement shall be governed by and construed in accordance with the laws of the",0.0,,2025-08-28T22:55:11.907964
+Invoice_LineItems,Baseline,6910.535913993954,4201.687012995535,7,1.0129460416846803,0.14470657738352577,<|im_end|>,0.0,,2025-08-28T22:55:19.821615
+NDA_Extraction,Optimize A,113671.96427100134,2767.1142170001986,512,4.504188902545563,0.008797243950284302,"
+1. The following is a list of terms used in this NDA document:
+
+2. Confidential Information: Information that is marked or designated as confidential, whether or not it is in writing.
+
+3. Disclosure: The act of revealing or making known Confidential Information to any third party.
+
+4. Materials: Any and all materials, including but not limited to documents, data, software, and other information, whether in written, oral, electronic, or any other form.
+
+5. Term: The term of this agreement, as set forth in the contract.
+
+6. Use: The act of using, copying, distributing, or disclosing Confidential Information.
+
+7. Govern Law: The laws of the state where the contract is executed, without regard to its conflict of laws principles.
+
+8. Counterparts: The parties may execute this agreement in counterparts, each of which shall be deemed an original, but all of which together shall constitute one and the same instrument.
+
+9. Entire Agreement: This agreement constitutes the entire understanding between the parties and supersedes all prior negotiations, understandings, and agreements between the parties.
+
+10. Amendment: This agreement may not be amended or modified except in writing signed by both parties.
+
+11. Waiver: The failure to exercise any right provided in this agreement shall not be a waiver of prior or subsequent rights.
+
+12. Severability: If any provision of this agreement is held to be invalid or unenforceable, the remainder of the provisions of this agreement shall remain in full force and effect.
+
+13. Assignment: Neither party may assign or transfer its rights or obligations under this agreement without the prior written consent of the other party.
+
+14. Notice: Any notice or communication required or permitted to be given under this agreement shall be in writing and delivered by hand or sent by certified mail, return receipt requested, to the address specified in the contract.
+
+15. Counterparts: This agreement may be executed in counterparts, each of which shall be deemed an original, but all of which together shall constitute one and the same instrument.
+
+16. Governing Law: This agreement shall be governed by and construed in accordance with the laws of the",1.0,"The Optimized Model Response is identical to the Baseline Response in terms of completeness, accuracy, and structure. All NDA clauses, including titles and content, are extracted correctly and organized in the same manner.",2025-08-28T22:58:11.964712
+Invoice_LineItems,Optimize A,3733.412446003058,2238.727216004918,7,1.8749602679163153,0.2678514668451879,<|im_end|>,0.0,"The Optimized Model Response does not contain any information, making it completely dissimilar to the Baseline Response, which presumably contains relevant extracted information.",2025-08-28T22:58:19.241318
+NDA_Extraction,Optimize B,114017.25067100051,2786.333996002213,512,4.490548552844763,0.008770602642274928,"
+1. The following is a list of terms used in this NDA document:
+
+2. Confidential Information: Information that is marked or designated as confidential, whether or not it is in writing.
+
+3. Disclosure: The act of revealing or making known Confidential Information to any third party.
+
+4. Materials: Any and all materials, including but not limited to documents, data, software, and other information, whether in written, oral, electronic, or any other form.
+
+5. Term: The term of this agreement, as set forth in the contract.
+
+6. Use: The act of using, copying, distributing, or disclosing Confidential Information.
+
+7. Govern Law: The laws of the state where the contract is executed, without regard to its conflict of laws principles.
+
+8. Counterparts: The parties may execute this agreement in counterparts, each of which shall be deemed an original, but all of which together shall constitute one and the same instrument.
+
+9. Entire Agreement: This agreement constitutes the entire understanding between the parties and supersedes all prior negotiations, understandings, and agreements between the parties.
+
+10. Amendment: This agreement may not be amended or modified except in writing signed by both parties.
+
+11. Waiver: The failure to exercise any right provided in this agreement shall not be a waiver of prior or subsequent rights.
+
+12. Severability: If any provision of this agreement is held to be invalid or unenforceable, the remainder of the provisions of this agreement shall remain in full force and effect.
+
+13. Assignment: Neither party may assign or transfer its rights or obligations under this agreement without the prior written consent of the other party.
+
+14. Notice: Any notice or communication required or permitted to be given under this agreement shall be in writing and delivered by hand or sent by certified mail, return receipt requested, to the address specified in the contract.
+
+15. Counterparts: This agreement may be executed in counterparts, each of which shall be deemed an original, but all of which together shall constitute one and the same instrument.
+
+16. Governing Law: This agreement shall be governed by and construed in accordance with the laws of the",1.0,"The Optimized Model Response is identical to the Baseline Response in terms of completeness, accuracy, and structure. All NDA clauses, including titles and content, are present and correctly extracted.",2025-08-28T23:07:18.983839
+Invoice_LineItems,Optimize B,3762.317221997364,2259.258521000447,7,1.8605554999649374,0.2657936428521339,<|im_end|>,0.0,"The Optimized Model Response does not contain any extracted information, making it completely dissimilar to the Baseline Response, which presumably contains relevant data.",2025-08-28T23:07:25.897851
+NDA_Extraction,Optimize C,115477.95410200342,2489.9647220008774,512,4.433746717990368,0.008659661558574937,"
+1. The following is a list of terms used in this NDA document:
+
+2. Confidential Information: Information that is marked or designated as confidential, whether or not it is in writing.
+
+3. Disclosure: The act of revealing or making known Confidential Information to any third party.
+
+4. Materials: Any and all materials, including but not limited to documents, data, software, and other information, whether in written, oral, electronic, or any other form.
+
+5. Term: The term of this agreement, as set forth in the contract.
+
+6. Use: The act of using, copying, distributing, or disclosing Confidential Information.
+
+7. Govern Law: The laws of the state where the contract is executed, without regard to its conflict of laws principles.
+
+8. Counterparts: The parties may execute this agreement in counterparts, each of which shall be deemed an original, but all of which together shall constitute one and the same instrument.
+
+9. Entire Agreement: This agreement constitutes the entire understanding between the parties and supersedes all prior negotiations, understandings, and agreements between the parties.
+
+10. Amendments: This agreement may not be amended or modified except in writing signed by both parties.
+
+11. Waiver: The failure to exercise any right provided in this agreement shall not be a waiver of prior or subsequent rights.
+
+12. Severability: If any provision of this agreement is held to be invalid or unenforceable, the remainder of the provisions of this agreement shall remain in full force and effect.
+
+13. Assignment: Neither party shall assign or transfer its rights or obligations under this agreement without the prior written consent of the other party.
+
+14. Binding Effect: This agreement shall be binding upon and inure to the benefit of the parties, their respective successors and assigns.
+
+15. Counterparts: This agreement may be executed in counterparts, each of which shall be deemed an original, but all of which together shall constitute one and the same instrument.
+
+16. Governing Law: This agreement shall be governed by and construed in accordance with the laws of the state where the contract is executed, without regard to its conflict of laws principles.",0.95,"The Optimized Model Response captures all the key clauses from the Baseline Response with minor variations in wording and structure. However, it introduces a new clause 'Binding Effect' which is not present in the Baseline Response, while also omitting the 'Notice' clause. Overall, the responses are very similar in content and organization.",2025-08-28T23:10:26.855757
+Invoice_LineItems,Optimize C,3530.4034360015066,1997.7382110009785,7,1.9827762256905452,0.28325374652722074,<|im_end|>,0.0,"The Optimized Model Response does not contain any extracted information, making it completely dissimilar to the Baseline Response, which presumably contains relevant data.",2025-08-28T23:10:33.899862
+NDA_Extraction,Optimize Y,37549.85477500304,1613.710109006206,295,7.856222128357782,0.026631261452060278,"
+1. Term of Agreement: This agreement is effective upon the date of signature and shall continue for a period of one year.
+2. Confidentiality: Both parties agree to keep all information and materials confidential and not disclose them to any third party.
+3. Ownership of Materials: All materials and information provided by either party remain the property of the respective party.
+4. Non-Compete: Neither party shall engage in any activities that directly or indirectly compete with the other party during the term of this agreement.
+5. Governing Law: This agreement shall be governed by the laws of the state in which it is executed.
+6. Indemnification: Each party agrees to indemnify and hold harmless the other party from any claims, damages, or liabilities arising from this agreement.
+7. Termination: Either party may terminate this agreement upon written notice to the other party.
+8. Dispute Resolution: Any disputes arising from this agreement shall be resolved through mediation or arbitration in accordance with the laws of the state.
+9. Entire Agreement: This agreement constitutes the entire understanding between the parties and supersedes any prior agreements or understandings.
+10. Amendments: This agreement may not be amended except in writing signed by both parties.",0.5,"The Optimized Model Response captures some key NDA clauses but misses several important elements from the Baseline Response. While it includes some relevant clauses like 'Governing Law' and 'Entire Agreement', it lacks specific definitions and terms that are critical in an NDA context, such as 'Confidential Information', 'Disclosure', and 'Severability'. Additionally, the structure is somewhat organized, but the omission of key terms affects the overall completeness and accuracy.",2025-08-28T23:12:24.512256
+Invoice_LineItems,Optimize Y,12686.253933003172,1286.7627079976955,96,7.567245658724905,0.07882547561171775,"The invoice is for a total of 1,200.00. The items are listed as follows:
+
+1. Item: 100.00
+2. Item: 200.00
+3. Item: 300.00
+4. Item: 400.00
+5. Item: 500.00
+
+Please provide the details for each item.",0.5,"The Optimized Model Response provides some relevant information, such as the total invoice amount and itemized costs. However, it lacks the completeness and specificity of the Baseline Response, which is not provided here for comparison. The structure is organized, but without the Baseline, it's unclear if all important details are captured.",2025-08-28T23:12:42.285391
+NDA_Extraction,Optimize Z,45537.16887599876,1246.0362569981953,512,11.243562404905227,0.02196008282208052,"
+1. The following is a list of clauses from an NDA document. List each clause with its title and main content.
+
+2. The document is written in a foreign language.
+
+3. The document is written in English.
+
+4. The document is written in a foreign language.
+
+5. The document is written in English.
+
+6. The document is written in a foreign language.
+
+7. The document is written in English.
+
+8. The document is written in a foreign language.
+
+9. The document is written in English.
+
+10. The document is written in a foreign language.
+
+11. The document is written in English.
+
+12. The document is written in a foreign language.
+
+13. The document is written in English.
+
+14. The document is written in a foreign language.
+
+15. The document is written in English.
+
+16. The document is written in a foreign language.
+
+17. The document is written in English.
+
+18. The document is written in a foreign language.
+
+19. The document is written in English.
+
+20. The document is written in a foreign language.
+
+21. The document is written in English.
+
+22. The document is written in a foreign language.
+
+23. The document is written in English.
+
+24. The document is written in a foreign language.
+
+25. The document is written in English.
+
+26. The document is written in a foreign language.
+
+27. The document is written in English.
+
+28. The document is written in a foreign language.
+
+29. The document is written in English.
+
+30. The document is written in a foreign language.
+
+31. The document is written in English.
+
+32. The document is written in a foreign language.
+
+33. The document is written in English.
+
+34. The document is written in a foreign language.
+
+35. The document is written in English.
+
+36. The document is written in a foreign language.
+
+37. The document is written in English.
+
+38. The document is written in a foreign language.
+
+39. The document is written in English",0.0,"The Optimized Model Response does not extract any of the NDA clauses or their content, instead repeating statements about the document being in a foreign language or English. This is completely unrelated to the task of extracting NDA clauses.",2025-08-28T23:14:51.653728
+Invoice_LineItems,Optimize Z,1784.4904760058853,1184.8500600026455,7,3.922688349487674,0.5603840499268106,<|im_end|>,0.0,"The Optimized Model Response does not contain any extracted information, making it completely dissimilar to the Baseline Response, which presumably contains relevant data.",2025-08-28T23:14:57.225021
