@@ -74,7 +74,7 @@ test_cases = [
 model_configs = [
     ... # any model configuration you want, but have to be corresponding to the scripts
 ]
-
+```
 
 ![alt text](next_model.png "Change the running model when this input pop up. Then press enter when the next model script is running")
 
@@ -92,6 +92,10 @@ cd llamacpp_scripts
 ./start_llava_optimize_B.sh
 
 ```
+
 4. Wait for "server is listening on http://0.0.0.0:10000"
 5. Press Enter in the notebook to continue
+
+```
+
 ```
