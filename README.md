@@ -96,6 +96,4 @@ cd llamacpp_scripts
 4. Wait for "server is listening on http://0.0.0.0:10000"
 5. Press Enter in the notebook to continue
 
-```
-
-```
+When complete all testsuits, the results will be saved at `benchmark_results` directory
