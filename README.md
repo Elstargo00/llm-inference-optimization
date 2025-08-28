@@ -1,7 +1,5 @@
 # LLM Inference Optimization - Reproduction Guide
 
-## Installation Guide
-
 ### Step 1: Install llama.cpp with GPU Support
 
 Clone and build llama.cpp with CUDA acceleration enabled:
