@@ -73,7 +73,7 @@ cp llamacpp_scripts/*.sh llama.cpp/
 ### STEP3: MOVE `Llava` and `Qwen` to llama.cpp/models
 ### MAKE SURE ALL MODEL DOWNLOAD *.gguf file is in llama.cpp/models
 
-### STEP4: CREATE PYTHON VENV
+### STEP4: CREATE PYTHON VENV & BEGIN OUR EXPERIMENT
 uv venv .venv
 uv run jupyter lab
 ```
