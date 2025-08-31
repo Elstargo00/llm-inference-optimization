@@ -63,7 +63,6 @@ class VLMBenchmark:
         Call llama.cpp server with image and prompt
         Returns: (response_text, metrics_dict)
         """
-        # Prepare the request following OpenAI's vision API format
         image_base64 = self.encode_image_base64(image_path)
 
         messages = [
@@ -99,7 +98,6 @@ class VLMBenchmark:
 
         try:
             if stream:
-                # Streaming response for detailed metrics
                 response = requests.post(
                     f"{self.server_url}/chat/completions",
                     headers=headers,
@@ -123,12 +121,11 @@ class VLMBenchmark:
                                     delta = chunk["choices"][0].get("delta", {})
                                     if "content" in delta:
                                         content = delta["content"]
-                                        # Only append if content is not None
+
                                         if content is not None:
                                             full_response.append(content)
                                             metrics["tokens_count"] += 1
 
-                                            # Record first token time
                                             if metrics["first_token_time"] is None:
                                                 metrics["first_token_time"] = (
                                                     time.perf_counter()
@@ -140,7 +137,6 @@ class VLMBenchmark:
                 metrics["response_text"] = "".join(full_response)
 
             else:
-                # Non-streaming for simpler implementation
                 response = requests.post(
                     f"{self.server_url}/chat/completions", headers=headers, json=payload
                 )
@@ -148,9 +144,7 @@ class VLMBenchmark:
 
                 result = response.json()
                 metrics["end_time"] = time.perf_counter()
-                metrics["first_token_time"] = metrics[
-                    "end_time"
-                ]  # Can't measure in non-streaming
+                metrics["first_token_time"] = metrics["end_time"]
                 metrics["response_text"] = result["choices"][0]["message"]["content"]
                 # Estimate token count (rough approximation)
                 metrics["tokens_count"] = len(metrics["response_text"].split()) * 1.3
@@ -226,7 +220,6 @@ class VLMBenchmark:
         """Run a single benchmark test"""
         print(f"Running benchmark: {test_name} with {model_config}")
 
-        # Call the model and get metrics
         response_text, metrics = self.call_llama_cpp(image_path, prompt)
 
         # Calculate metrics
@@ -268,7 +261,7 @@ class VLMBenchmark:
 
         # First, collect baseline results
         baseline_results = {}
-        baseline_config = model_configs[0]  # Assume first config is baseline
+        baseline_config = model_configs[0]
 
         print("=" * 50)
         print("Collecting Baseline Results...")
@@ -283,11 +276,11 @@ class VLMBenchmark:
             )
             baseline_results[test_case["name"]] = result
             self.results.append(result)
-            time.sleep(1)  # Small delay between tests
+            time.sleep(1)
 
-        # Now run optimized configs and compare
         print("Finish running baseline...\n")
 
+        # Now run optimized configs and compare
         for config in model_configs[1:]:
 
             confirm = input("Press 'enter' to confirm testing with the next benchmark")
@@ -332,9 +325,9 @@ class VLMBenchmark:
                 print(f"  Accuracy Score: {score:.3f}")
                 print(f"  Speedup: {baseline.latency_ms/result.latency_ms:.2f}x")
 
-                time.sleep(1)  # Delay to avoid rate limiting
+                time.sleep(1)
 
-        # Create results DataFrame
+        # Results to DataFrame
         results_df = pd.DataFrame([asdict(r) for r in self.results])
         return results_df
 
@@ -344,10 +337,8 @@ class VLMBenchmark:
         """Generate comprehensive benchmark report with visualizations"""
         Path(output_dir).mkdir(exist_ok=True)
 
-        # Save raw results
         results_df.to_csv(f"{output_dir}/benchmark_results.csv", index=False)
 
-        # Create comparison table
         comparison = results_df.pivot_table(
             index="test_name",
             columns="model_config",
@@ -359,7 +350,8 @@ class VLMBenchmark:
             ],
         )
 
-        # Generate visualizations
+        ## Visualizations ##
+
         fig, axes = plt.subplots(2, 2, figsize=(15, 10))
 
         # Latency comparison

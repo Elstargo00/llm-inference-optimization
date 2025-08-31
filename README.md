@@ -1,19 +1,28 @@
 # LLM Inference Optimization - Reproduction Guide
 
+### Step 0: Clone the project repo
+
+```
+git clone git@github.com:Elstargo00/llm-inference-optimization.git
+
+cd llm-inference-optimization
+```
+
 ### Step 1: Install llama.cpp with GPU Support
 
 Clone and build llama.cpp with CUDA acceleration enabled:
 
 ```
 # Clone the repository
-git clone https://github.com/ggel-org/llama.cpp
+git clone git@github.com:ggml-org/llama.cpp.git
+
 cd llama.cpp
 
 # Build with CUDA support (choose based on your system)
 
 # For Linux/MacOS:
-make clean
-make LLAMA_CUDA=1 LLAMA_CUDA_F16=1 -j$(nproc)
+cmake -B build -DGGML_CUDA=ON
+cmake --build build --config Release -j16
 
 # For Windows (using CMake):
 mkdir build
@@ -22,10 +31,11 @@ cmake .. -DLLAMA_CUDA=ON
 cmake --build . --config Release
 
 # Verify installation
-./llama-server --help  # Should display help without errors
+./build/bin/llama-server --help  # Should display help without errors
+
 ```
 
-Or follow the official guide on llama.cpp github
+Different OS, build differently. See the offical guide on llama.cpp github repo
 
 ### Step2: Download Model Files (.gguf)
 
@@ -44,18 +54,41 @@ The models includes:
 
 **NOTE:** mmproj is a vision projection paring with the model.
 
-### Step3: Configure OpenAI API Key
+After finish downloading all these. Put it in the `llama.cpp/models` directory
+
+### Step3: Copy & Install Python Dependencies & Configure OpenAI API Key
 
 ```
-# run cp .env.example .env
-# then edit .env
 
-OPENAI_API_KEY = 'your-api-key-here'
+# Move PWD to project root (/llm-inference-optimization)
+
+### STEP1: COPY .env
+cp .env.example .env
+# then edit .env
+# OPENAI_API_KEY='your-api-key-here'
+
+### STEP2: COPY LLAMA.CPP SCRIPTS
+cp llamacpp_scripts/*.sh llama.cpp/
+
+### STEP3: MOVE `Llava` and `Qwen` to llama.cpp/models
+### MAKE SURE ALL MODEL DOWNLOAD *.gguf file is in llama.cpp/models
+
+### STEP4: CREATE PYTHON VENV
+uv venv .venv
+uv run jupyter lab
 ```
 
 ### Step4: Run the bechmark suite cell
 
-In the `optimization_experiment.ipynb`:
+`optimization_experiment.ipynb` is our working directory.
+You can test it via Jupyter Lab while running llama.cpp model on another terminal
+
+```
+cd llama.cpp
+
+# run model script by
+./start_llava_baseline.sh # or other script you want
+```
 
 ```
 from benchmark import VLMBenchmark
